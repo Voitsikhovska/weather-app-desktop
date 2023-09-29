@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/fd1f55867f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;1,100;1,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-information">
+        <h1>Weather</h1>
+        <h2>Today</h2>
+        <div id="dateTime"></div>
+        <div class="weather">
+          <h1 id="temperature">32℃</h1>
+          <h2>
+            Sunny☀️
+            <br />
+            Sunday
+          </h2>
+          <hr />
+          <p class="w-info">
+            Precipitation: 88%
+            <br />
+            Wind: 4km/h
+            <br />
+            RealFeel: 38 ℃
+            <br />
+            Cloud Cover: 50%
+          </p>
+          <ul class="weather-days">
+            <li>Mon <br />☀️ <br />28℃</li>
+            <li>
+              Tue<br />
+              🌧 <br />23℃
+            </li>
+            <li>
+              Wed <br />🌥<br />
+              25℃
+            </li>
+            <li>Thu <br />🌥 <br />27℃</li>
+            <li>
+              Fri <br />☀️<br />
+              30℃
+            </li>
+          </ul>
+        </div>
+        <div class="geolocation">
+          <img src="images/pexels-faik-akmd-1025469.jpg" alt="weather" />
+          <div class="current-location">
+            <i class="fa-solid fa-location-dot location"></i>
+            <h3 class="result">Lviv, Ukraine</h3>
+          </div>
+          <div class="city">
+            <form class="search">
+              <input
+                type="text"
+                name="text"
+                id="cityInput"
+                class="search"
+                placeholder="                  Search here!"
+              />
+              <input
+                type="submit"
+                name="submit"
+                class="submit"
+                value="Search"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
