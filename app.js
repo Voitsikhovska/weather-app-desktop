@@ -122,5 +122,5 @@ function showTemperarure(response) {
   console.log(response);
   //let temperature = Math.round(response.data.main.temp);
   let tempElem = document.querySelector("#temperature");
-  tempElem.innerHTML = `${response.data.main.temp}℃`;
+  tempElem.innerHTML = `${Math.round(response.data.main.temp)}℃`;
 }

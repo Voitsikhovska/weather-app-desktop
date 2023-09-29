@@ -22,6 +22,12 @@ h3 {
     font-size: 18px;
 }
 
+.sourse {
+    display: block;
+    position: relative;
+
+}
+
 .main-information {
     display: block;
     position: fixed;
@@ -110,7 +116,7 @@ hr {
     position: fixed;
     width: 650px;
     height: 600px;
-    top: 60px;
+    top: 67px;
 }
 
 .current-location {
